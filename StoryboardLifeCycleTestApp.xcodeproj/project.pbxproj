@@ -24,6 +24,7 @@
 		E48EF44E2C08A76200587E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48EF4512C08A76200587E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48EF4532C08A76200587E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48EF4592C08A7CF00587E4E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		E48EF4392C08A76100587E4E = {
 			isa = PBXGroup;
 			children = (
+				E48EF4592C08A7CF00587E4E /* README.md */,
 				E48EF4442C08A76100587E4E /* StoryboardLifeCycleTestApp */,
 				E48EF4432C08A76100587E4E /* Products */,
 			);
