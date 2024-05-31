@@ -9,15 +9,22 @@ import UIKit
 
 class SplashViewController: UIViewController {
     
-
+    
+    @IBOutlet weak var progress: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        progress.setProgress(1.0, animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.performSegue(withIdentifier: "replaceSegue", sender: nil)
         }
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+    }
 
     /*
     // MARK: - Navigation

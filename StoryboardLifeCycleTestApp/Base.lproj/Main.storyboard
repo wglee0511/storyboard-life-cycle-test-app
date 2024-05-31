@@ -73,26 +73,22 @@
                                     <constraint firstAttribute="width" constant="200" id="iDx-bo-QoX"/>
                                 </constraints>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="H65-JI-bJU">
-                                <rect key="frame" x="171.66666666666666" y="534" width="50" height="50"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ciw-Vv-r3O">
+                                <rect key="frame" x="121" y="549" width="150" height="4"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="S33-l8-iJa"/>
-                                    <constraint firstAttribute="height" constant="50" id="b05-f9-15U"/>
-                                </constraints>
-                                <color key="color" systemColor="systemPinkColor"/>
-                            </activityIndicatorView>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="16T-ae-Rki"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="H65-JI-bJU" firstAttribute="centerX" secondItem="eEg-ct-pC6" secondAttribute="centerX" id="60S-BY-IFn"/>
                             <constraint firstItem="7nU-7Q-d43" firstAttribute="centerY" secondItem="eEg-ct-pC6" secondAttribute="centerY" id="b5b-BR-FVM"/>
-                            <constraint firstItem="H65-JI-bJU" firstAttribute="top" secondItem="7nU-7Q-d43" secondAttribute="bottom" constant="8" symbolic="YES" id="dqq-iD-yxA"/>
                             <constraint firstItem="7nU-7Q-d43" firstAttribute="centerX" secondItem="eEg-ct-pC6" secondAttribute="centerX" id="inr-Bx-yAO"/>
+                            <constraint firstItem="Ciw-Vv-r3O" firstAttribute="top" secondItem="7nU-7Q-d43" secondAttribute="bottom" constant="23" id="uZD-SH-TMt"/>
+                            <constraint firstItem="Ciw-Vv-r3O" firstAttribute="centerX" secondItem="eEg-ct-pC6" secondAttribute="centerX" id="zul-1j-neQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progress" destination="Ciw-Vv-r3O" id="Lb4-bc-wW5"/>
                         <segue destination="BYZ-38-t0r" kind="custom" identifier="replaceSegue" customClass="ReplaceSegue" customModule="StoryboardLifeCycleTestApp" customModuleProvider="target" id="3Ti-Yo-GbC"/>
                     </connections>
                 </viewController>
