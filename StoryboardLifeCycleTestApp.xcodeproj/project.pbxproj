@@ -13,6 +13,8 @@
 		E48EF44D2C08A76100587E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EF44B2C08A76100587E4E /* Main.storyboard */; };
 		E48EF44F2C08A76200587E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EF44E2C08A76200587E4E /* Assets.xcassets */; };
 		E48EF4522C08A76200587E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EF4502C08A76200587E4E /* LaunchScreen.storyboard */; };
+		E48EF45F2C09A8A700587E4E /* ReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48EF45E2C09A8A700587E4E /* ReplaceSegue.swift */; };
+		E48EF4612C09ABB000587E4E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48EF4602C09ABB000587E4E /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		E48EF4512C08A76200587E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48EF4532C08A76200587E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E48EF4592C08A7CF00587E4E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E48EF45E2C09A8A700587E4E /* ReplaceSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceSegue.swift; sourceTree = "<group>"; };
+		E48EF4602C09ABB000587E4E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				E48EF44E2C08A76200587E4E /* Assets.xcassets */,
 				E48EF4502C08A76200587E4E /* LaunchScreen.storyboard */,
 				E48EF4532C08A76200587E4E /* Info.plist */,
+				E48EF45E2C09A8A700587E4E /* ReplaceSegue.swift */,
+				E48EF4602C09ABB000587E4E /* SplashViewController.swift */,
 			);
 			path = StoryboardLifeCycleTestApp;
 			sourceTree = "<group>";
@@ -142,7 +148,9 @@
 			files = (
 				E48EF44A2C08A76100587E4E /* ViewController.swift in Sources */,
 				E48EF4462C08A76100587E4E /* AppDelegate.swift in Sources */,
+				E48EF45F2C09A8A700587E4E /* ReplaceSegue.swift in Sources */,
 				E48EF4482C08A76100587E4E /* SceneDelegate.swift in Sources */,
+				E48EF4612C09ABB000587E4E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

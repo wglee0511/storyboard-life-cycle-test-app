@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FDW-a7-E1f">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -57,11 +57,58 @@
             </objects>
             <point key="canvasLocation" x="102" y="4"/>
         </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="14s-19-JeU">
+            <objects>
+                <viewController id="FDW-a7-E1f" customClass="SplashViewController" customModule="StoryboardLifeCycleTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEg-ct-pC6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-7Q-d43">
+                                <rect key="frame" x="96.666666666666686" y="328" width="200" height="197"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eZr-td-69w"/>
+                                    <constraint firstAttribute="width" constant="200" id="iDx-bo-QoX"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="H65-JI-bJU">
+                                <rect key="frame" x="171.66666666666666" y="534" width="50" height="50"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="S33-l8-iJa"/>
+                                    <constraint firstAttribute="height" constant="50" id="b05-f9-15U"/>
+                                </constraints>
+                                <color key="color" systemColor="systemPinkColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="16T-ae-Rki"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H65-JI-bJU" firstAttribute="centerX" secondItem="eEg-ct-pC6" secondAttribute="centerX" id="60S-BY-IFn"/>
+                            <constraint firstItem="7nU-7Q-d43" firstAttribute="centerY" secondItem="eEg-ct-pC6" secondAttribute="centerY" id="b5b-BR-FVM"/>
+                            <constraint firstItem="H65-JI-bJU" firstAttribute="top" secondItem="7nU-7Q-d43" secondAttribute="bottom" constant="8" symbolic="YES" id="dqq-iD-yxA"/>
+                            <constraint firstItem="7nU-7Q-d43" firstAttribute="centerX" secondItem="eEg-ct-pC6" secondAttribute="centerX" id="inr-Bx-yAO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="replaceSegue" customClass="ReplaceSegue" customModule="StoryboardLifeCycleTestApp" customModuleProvider="target" id="3Ti-Yo-GbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="REN-nn-PJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-763" y="4"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
