@@ -23,12 +23,33 @@
                                     <constraint firstAttribute="height" constant="200" id="l1u-63-B6B"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqo-Lf-cqT">
+                                <rect key="frame" x="16" y="782" width="92" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open Url"/>
+                                <connections>
+                                    <action selector="onPressOpenUrl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Km-sq-4Md"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lL-co-oz2">
+                                <rect key="frame" x="252" y="781" width="125" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open Setting"/>
+                                <connections>
+                                    <action selector="onPressSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIK-4T-4b6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Jqo-Lf-cqT" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="256" id="9cU-ki-8v1"/>
+                            <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="CZ8-tH-fG7"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChL-1C-aAy"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fa9-nU-0jh"/>
+                            <constraint firstItem="Jqo-Lf-cqT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q8n-34-Sg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="W1o-U3-eOw"/>
+                            <constraint firstItem="3lL-co-oz2" firstAttribute="leading" secondItem="Jqo-Lf-cqT" secondAttribute="trailing" constant="144" id="kfe-L1-Pma"/>
                         </constraints>
                     </view>
                 </viewController>
