@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E42E79112C0ABDB7006A8CFE /* TestModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42E79102C0ABDB7006A8CFE /* TestModalViewController.swift */; };
+		E42E79172C0AD580006A8CFE /* uicolor_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42E79162C0AD580006A8CFE /* uicolor_extension.swift */; };
 		E48EF4462C08A76100587E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48EF4452C08A76100587E4E /* AppDelegate.swift */; };
 		E48EF4482C08A76100587E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48EF4472C08A76100587E4E /* SceneDelegate.swift */; };
 		E48EF44A2C08A76100587E4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48EF4492C08A76100587E4E /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		E42E79102C0ABDB7006A8CFE /* TestModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModalViewController.swift; sourceTree = "<group>"; };
+		E42E79162C0AD580006A8CFE /* uicolor_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uicolor_extension.swift; sourceTree = "<group>"; };
 		E48EF4422C08A76100587E4E /* StoryboardLifeCycleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardLifeCycleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EF4452C08A76100587E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48EF4472C08A76100587E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E42E79152C0AD568006A8CFE /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E42E79162C0AD580006A8CFE /* uicolor_extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		E48EF4392C08A76100587E4E = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		E48EF4442C08A76100587E4E /* StoryboardLifeCycleTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				E42E79152C0AD568006A8CFE /* extensions */,
 				E48EF4452C08A76100587E4E /* AppDelegate.swift */,
 				E48EF4472C08A76100587E4E /* SceneDelegate.swift */,
 				E48EF4492C08A76100587E4E /* ViewController.swift */,
@@ -155,6 +166,7 @@
 				E48EF45F2C09A8A700587E4E /* ReplaceSegue.swift in Sources */,
 				E48EF4482C08A76100587E4E /* SceneDelegate.swift in Sources */,
 				E48EF4612C09ABB000587E4E /* SplashViewController.swift in Sources */,
+				E42E79172C0AD580006A8CFE /* uicolor_extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
