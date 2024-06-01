@@ -47,10 +47,25 @@
                                     <segue destination="2pD-fU-UjZ" kind="presentation" modalPresentationStyle="automatic" id="apj-oR-cYR"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fST-9P-zgT">
+                                <rect key="frame" x="172" y="565" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemPinkColor"/>
+                                <connections>
+                                    <action selector="onPressImageSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="lcN-eW-58S"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U8I-5F-rtw">
+                                <rect key="frame" x="14" y="622" width="365" height="31"/>
+                                <connections>
+                                    <action selector="onChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="MSR-F4-ykb"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
                         <constraints>
+                            <constraint firstItem="fST-9P-zgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3OP-Ju-vTQ"/>
                             <constraint firstItem="Jqo-Lf-cqT" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="256" id="9cU-ki-8v1"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="CZ8-tH-fG7"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChL-1C-aAy"/>
@@ -58,16 +73,25 @@
                             <constraint firstItem="Jlh-vV-IO7" firstAttribute="leading" secondItem="Jqo-Lf-cqT" secondAttribute="trailing" constant="35" id="Ezc-cy-mMs"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fa9-nU-0jh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="Iep-lz-YBk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U8I-5F-rtw" secondAttribute="trailing" constant="16" id="LsP-HS-EEg"/>
+                            <constraint firstItem="U8I-5F-rtw" firstAttribute="top" secondItem="fST-9P-zgT" secondAttribute="bottom" constant="26" id="NUm-DJ-qjx"/>
                             <constraint firstItem="Jqo-Lf-cqT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q8n-34-Sg5"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="U9m-oW-vMa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="W1o-U3-eOw"/>
+                            <constraint firstItem="fST-9P-zgT" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="39" id="eH2-BK-YYP"/>
+                            <constraint firstItem="U8I-5F-rtw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qeg-Rn-GaQ"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="leading" secondItem="Jlh-vV-IO7" secondAttribute="trailing" constant="34" id="tOJ-V8-O8Z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="centerImage" destination="c1u-kh-NPo" id="gO3-SR-6QS"/>
+                        <outlet property="sliderValue" destination="U8I-5F-rtw" id="TJa-e6-33n"/>
+                        <outlet property="switchValue" destination="fST-9P-zgT" id="JN2-eO-7C4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
         <!--Test Modal View Controller-->
         <scene sceneID="xA2-mu-Gbp">

@@ -8,7 +8,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var centerImage: UIImageView!
+    
+    @IBOutlet weak var switchValue: UISwitch!
+    
+    @IBOutlet weak var sliderValue: UISlider!
+    
+    @IBAction func onChangeSlider(_ sender: Any) {
+        if sliderValue.value == 0.0 {
+            switchValue.isOn = false
+        } else {
+            switchValue.isOn = true
+        }
+        centerImage.alpha = CGFloat(sliderValue.value)
+    }
+    
+    
+    @IBAction func onPressImageSwitch(_ sender: Any) {
+        if switchValue.isOn {
+            centerImage.alpha = CGFloat(1)
+            sliderValue.value = 1.0
+        } else {
+            centerImage.alpha = CGFloat(0)
+            sliderValue.value = 0.0
+        }
+    }
+    
+    
+    
     @IBAction func onPressSetting(_ sender: Any) {
         guard let url = URL(string: UIApplication.openSettingsURLString) else  {
             return
@@ -33,6 +61,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        centerImage.alpha = 0.0
         // Do any additional setup after loading the view.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
