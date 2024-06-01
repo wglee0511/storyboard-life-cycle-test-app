@@ -39,6 +39,14 @@
                                     <action selector="onPressSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIK-4T-4b6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlh-vV-IO7">
+                                <rect key="frame" x="143" y="783" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="2pD-fU-UjZ" kind="presentation" modalPresentationStyle="automatic" id="apj-oR-cYR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,16 +54,36 @@
                             <constraint firstItem="Jqo-Lf-cqT" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="256" id="9cU-ki-8v1"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="CZ8-tH-fG7"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChL-1C-aAy"/>
+                            <constraint firstItem="Jlh-vV-IO7" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="257" id="Ed8-wi-A3o"/>
+                            <constraint firstItem="Jlh-vV-IO7" firstAttribute="leading" secondItem="Jqo-Lf-cqT" secondAttribute="trailing" constant="35" id="Ezc-cy-mMs"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fa9-nU-0jh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="Iep-lz-YBk"/>
                             <constraint firstItem="Jqo-Lf-cqT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q8n-34-Sg5"/>
+                            <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="U9m-oW-vMa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="W1o-U3-eOw"/>
-                            <constraint firstItem="3lL-co-oz2" firstAttribute="leading" secondItem="Jqo-Lf-cqT" secondAttribute="trailing" constant="144" id="kfe-L1-Pma"/>
+                            <constraint firstItem="3lL-co-oz2" firstAttribute="leading" secondItem="Jlh-vV-IO7" secondAttribute="trailing" constant="34" id="tOJ-V8-O8Z"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+        <!--Test Modal View Controller-->
+        <scene sceneID="xA2-mu-Gbp">
+            <objects>
+                <viewController id="2pD-fU-UjZ" customClass="TestModalViewController" customModule="StoryboardLifeCycleTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lls-YD-dnl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fOh-IX-rZz"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SEr-1t-P5E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsa-9F-CpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="16"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="14s-19-JeU">
@@ -103,8 +131,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

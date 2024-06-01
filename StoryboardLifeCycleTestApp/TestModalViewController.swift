@@ -1,30 +1,20 @@
 //
-//  SplashViewController.swift
+//  TestModalViewController.swift
 //  StoryboardLifeCycleTestApp
 //
-//  Created by racoon on 5/31/24.
+//  Created by racoon on 6/1/24.
 //
 
 import UIKit
 
-class SplashViewController: UIViewController {
-    
-    
-    @IBOutlet weak var progress: UIProgressView!
-    
+class TestModalViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        progress.setProgress(1.0, animated: true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.performSegue(withIdentifier: "replaceSegue", sender: nil)
-        }
+
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-    }
 
     /*
     // MARK: - Navigation
