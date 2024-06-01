@@ -15,6 +15,35 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sliderValue: UISlider!
     
+    @IBAction func openPinkView(_ sender: Any) {
+        let storyboardValue = UIStoryboard(name: "sub", bundle: nil)
+        let viewControllerValue = storyboardValue.instantiateViewController(identifier: "pinkView")
+        
+        
+        present(viewControllerValue, animated: true)
+        
+    }
+    
+    @IBAction func openSubStoryboard(_ sender: Any) {
+        let viewControllerValue = storyboard?.instantiateViewController(identifier: "openToCodeViewController")
+        
+        guard let viewControllerGuardValue = viewControllerValue else {
+            return
+        }
+        
+        present(viewControllerGuardValue, animated: true)
+    }
+    
+    @IBAction func viewInitialController(_ sender: Any) {
+        let viewContollerValue = storyboard?.instantiateInitialViewController()
+        
+        guard let viewContollerGuardValue = viewContollerValue else {
+            return
+        }
+        present(viewContollerGuardValue, animated: true)
+    }
+    
+    
     @IBAction func onChangeSlider(_ sender: Any) {
         if sliderValue.value == 0.0 {
             switchValue.isOn = false

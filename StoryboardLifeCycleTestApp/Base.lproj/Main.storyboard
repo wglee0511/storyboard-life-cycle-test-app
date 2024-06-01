@@ -60,25 +60,81 @@
                                     <action selector="onChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="MSR-F4-ykb"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbR-dE-AU5">
+                                <rect key="frame" x="16" y="59" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="1Y6-Md-DD7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Present Initial View controller"/>
+                                <connections>
+                                    <action selector="viewInitialController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AnT-3P-okO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7p-pg-mef">
+                                <rect key="frame" x="16" y="104" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="VPI-oH-8Eb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open Sub Storyboard"/>
+                                <connections>
+                                    <action selector="openSubStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0U-mS-EOG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="845-8a-gBN">
+                                <rect key="frame" x="16" y="149" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="yU1-9d-FZa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open Pink View"/>
+                                <connections>
+                                    <action selector="openPinkView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V49-wo-1uM"/>
+                                    <action selector="openSubStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRF-yX-T66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="728-Td-OYR">
+                                <rect key="frame" x="16" y="194" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="4sK-7d-Jas"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="DW8-a8-JGO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Connect Storyboard test"/>
+                                <connections>
+                                    <action selector="openPinkView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mra-4V-m38"/>
+                                    <action selector="openSubStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuK-ma-C2e"/>
+                                    <segue destination="9zt-uE-c8B" kind="presentation" id="SUv-Y7-Eaj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="fST-9P-zgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3OP-Ju-vTQ"/>
+                            <constraint firstItem="t7p-pg-mef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3RP-vW-FWG"/>
                             <constraint firstItem="Jqo-Lf-cqT" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="256" id="9cU-ki-8v1"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="CZ8-tH-fG7"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChL-1C-aAy"/>
+                            <constraint firstItem="bbR-dE-AU5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DSd-04-kXB"/>
                             <constraint firstItem="Jlh-vV-IO7" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="257" id="Ed8-wi-A3o"/>
                             <constraint firstItem="Jlh-vV-IO7" firstAttribute="leading" secondItem="Jqo-Lf-cqT" secondAttribute="trailing" constant="35" id="Ezc-cy-mMs"/>
                             <constraint firstItem="c1u-kh-NPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fa9-nU-0jh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="Iep-lz-YBk"/>
+                            <constraint firstItem="bbR-dE-AU5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KG2-AZ-jZ2"/>
+                            <constraint firstItem="728-Td-OYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KNF-PV-dIm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U8I-5F-rtw" secondAttribute="trailing" constant="16" id="LsP-HS-EEg"/>
                             <constraint firstItem="U8I-5F-rtw" firstAttribute="top" secondItem="fST-9P-zgT" secondAttribute="bottom" constant="26" id="NUm-DJ-qjx"/>
+                            <constraint firstItem="t7p-pg-mef" firstAttribute="top" secondItem="bbR-dE-AU5" secondAttribute="bottom" constant="10" id="Pod-v2-V3g"/>
                             <constraint firstItem="Jqo-Lf-cqT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q8n-34-Sg5"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="255" id="U9m-oW-vMa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lL-co-oz2" secondAttribute="trailing" constant="16" id="W1o-U3-eOw"/>
+                            <constraint firstItem="728-Td-OYR" firstAttribute="top" secondItem="845-8a-gBN" secondAttribute="bottom" constant="10" id="c5k-G4-7AT"/>
+                            <constraint firstItem="845-8a-gBN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ci5-Wm-CUh"/>
                             <constraint firstItem="fST-9P-zgT" firstAttribute="top" secondItem="c1u-kh-NPo" secondAttribute="bottom" constant="39" id="eH2-BK-YYP"/>
+                            <constraint firstItem="845-8a-gBN" firstAttribute="top" secondItem="t7p-pg-mef" secondAttribute="bottom" constant="10" id="kW5-1k-iK8"/>
                             <constraint firstItem="U8I-5F-rtw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qeg-Rn-GaQ"/>
                             <constraint firstItem="3lL-co-oz2" firstAttribute="leading" secondItem="Jlh-vV-IO7" secondAttribute="trailing" constant="34" id="tOJ-V8-O8Z"/>
                         </constraints>
@@ -195,6 +251,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REN-nn-PJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-763" y="4"/>
+        </scene>
+        <!--openToCodeViewController-->
+        <scene sceneID="2bT-55-kQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="openToCodeViewController" storyboardName="sub" referencedIdentifier="openToCodeViewController" id="Ema-2A-v5I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeE-N6-j34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="-721"/>
+        </scene>
+        <!--testStoryboard-->
+        <scene sceneID="2u3-ov-xwU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="testStoryboard" id="9zt-uE-c8B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DxA-qj-wFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-412"/>
         </scene>
     </scenes>
     <resources>

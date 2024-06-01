@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42B3BB02C0AE615004B4EF1 /* sub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42B3BAE2C0AE615004B4EF1 /* sub.storyboard */; };
+		E42B3BB42C0AE813004B4EF1 /* testStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42B3BB32C0AE813004B4EF1 /* testStoryboard.storyboard */; };
 		E42E79112C0ABDB7006A8CFE /* TestModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42E79102C0ABDB7006A8CFE /* TestModalViewController.swift */; };
 		E42E79172C0AD580006A8CFE /* uicolor_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42E79162C0AD580006A8CFE /* uicolor_extension.swift */; };
 		E48EF4462C08A76100587E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48EF4452C08A76100587E4E /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E42B3BAF2C0AE615004B4EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/sub.storyboard; sourceTree = "<group>"; };
+		E42B3BB32C0AE813004B4EF1 /* testStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = testStoryboard.storyboard; sourceTree = "<group>"; };
 		E42E79102C0ABDB7006A8CFE /* TestModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModalViewController.swift; sourceTree = "<group>"; };
 		E42E79162C0AD580006A8CFE /* uicolor_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uicolor_extension.swift; sourceTree = "<group>"; };
 		E48EF4422C08A76100587E4E /* StoryboardLifeCycleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardLifeCycleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,7 @@
 		E48EF4442C08A76100587E4E /* StoryboardLifeCycleTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				E42B3BAE2C0AE615004B4EF1 /* sub.storyboard */,
 				E42E79152C0AD568006A8CFE /* extensions */,
 				E48EF4452C08A76100587E4E /* AppDelegate.swift */,
 				E48EF4472C08A76100587E4E /* SceneDelegate.swift */,
@@ -85,6 +90,7 @@
 				E48EF45E2C09A8A700587E4E /* ReplaceSegue.swift */,
 				E48EF4602C09ABB000587E4E /* SplashViewController.swift */,
 				E42E79102C0ABDB7006A8CFE /* TestModalViewController.swift */,
+				E42B3BB32C0AE813004B4EF1 /* testStoryboard.storyboard */,
 			);
 			path = StoryboardLifeCycleTestApp;
 			sourceTree = "<group>";
@@ -147,9 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42B3BB42C0AE813004B4EF1 /* testStoryboard.storyboard in Resources */,
 				E48EF4522C08A76200587E4E /* LaunchScreen.storyboard in Resources */,
 				E48EF44F2C08A76200587E4E /* Assets.xcassets in Resources */,
 				E48EF44D2C08A76100587E4E /* Main.storyboard in Resources */,
+				E42B3BB02C0AE615004B4EF1 /* sub.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +181,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E42B3BAE2C0AE615004B4EF1 /* sub.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E42B3BAF2C0AE615004B4EF1 /* Base */,
+			);
+			name = sub.storyboard;
+			sourceTree = "<group>";
+		};
 		E48EF44B2C08A76100587E4E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
